@@ -87,12 +87,10 @@
         cur_Y = cur_Y < 1 ? max_Y : cur_Y
 
         // 移除上次 class
-        const last_target = document.querySelector(`.X${last_X}.Y${last_Y}`)
-        last_target.classList.toggle('selected')
+        document.querySelector(`.X${last_X}.Y${last_Y}`).classList.toggle('selected')
 
         // 新增當前 class
-        const target = document.querySelector(`.X${cur_X}.Y${cur_Y}`)
-        target.classList.toggle('selected')
+        document.querySelector(`.X${cur_X}.Y${cur_Y}`).classList.toggle('selected')
       })
     </script>
   </body>
