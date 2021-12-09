@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>表格移動</title>
     <style>
       h1 {
@@ -63,15 +61,19 @@
 
         // 檢查按鍵 並 遞增 / 遞減
         switch (e.code) {
+          case 'KeyD':
           case 'ArrowRight':
             cur_X++
             break
+          case 'KeyA':
           case 'ArrowLeft':
             cur_X--
             break
+          case 'KeyW':
           case 'ArrowUp':
             cur_Y--
             break
+          case 'KeyS':
           case 'ArrowDown':
             cur_Y++
             break
