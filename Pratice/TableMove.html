@@ -45,6 +45,7 @@
         for (let x = 1; x <= max_X; x++) {
           const td = document.createElement('td')
           td.className = `X${x} Y${y}`
+
           if (x === cur_X && y === cur_Y) td.classList.add('selected')
 
           tr.append(td)
@@ -65,17 +66,20 @@
           case 'ArrowRight':
             cur_X++
             break
+
           case 'KeyA':
           case 'ArrowLeft':
             cur_X--
             break
-          case 'KeyW':
-          case 'ArrowUp':
-            cur_Y--
-            break
+
           case 'KeyS':
           case 'ArrowDown':
             cur_Y++
+            break
+
+          case 'KeyW':
+          case 'ArrowUp':
+            cur_Y--
             break
 
           default:
