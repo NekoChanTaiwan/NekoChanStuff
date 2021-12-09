@@ -12,12 +12,13 @@
 
       table {
         margin: 0 auto;
+        border-collapse: collapse;
       }
 
       td {
         width: 50px;
         height: 50px;
-        border: 1px solid black;
+        border: 2px solid black;
       }
 
       .selected {
@@ -46,7 +47,7 @@
         for (let x = 1; x <= max_X; x++) {
           const td = document.createElement('td')
           td.className = `X${x} Y${y}`
-          if (x === 1 && y === 1) td.classList.add('selected')
+          if (x === cur_X && y === cur_Y) td.classList.add('selected')
 
           tr.append(td)
         }
