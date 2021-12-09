@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>表格移動</title>
     <style>
+      h1 {
+        text-align: center;
+      }
+
       table {
         margin: 0 auto;
       }
@@ -22,12 +26,13 @@
     </style>
   </head>
   <body>
+    <h1>表格移動</h1>
     <table></table>
 
     <script>
       // table 的最大 X 和 Y
-      const max_X = prompt('請輸入最大列數') ?? 5
-      const max_Y = prompt('請輸入最大行數') ?? 5
+      const max_X = prompt('請輸入最大列數', 5) ?? 5
+      const max_Y = prompt('請輸入最大行數', 5) ?? 5
 
       // 當前位置
       let cur_X = 1
