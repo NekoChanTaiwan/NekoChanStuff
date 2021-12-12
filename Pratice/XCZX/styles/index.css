@@ -256,6 +256,7 @@ body {
 
 .recommend .products {
   min-height: 500px;
+  width: 1215px;
   padding-top: 20px;
 }
 
