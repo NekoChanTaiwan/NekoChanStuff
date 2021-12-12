@@ -17,12 +17,12 @@
     <!-- 頂部導航欄 -->
     <nav class="nav center">
       <a class="logo" href="#" title="學成在線">
-        <img src="./images/nav/logo.png" alt="學成在線 LOGO" />
+        <img src="./images/logo.png" alt="學成在線 LOGO" />
       </a>
       <div class="menu">
-        <a href="#" class="item">首頁</a>
-        <a href="#" class="item">課程</a>
-        <a href="#" class="item">職業規劃</a>
+        <a class="item" href="#">首頁</a>
+        <a class="item" href="#">課程</a>
+        <a class="item" href="#">職業規劃</a>
       </div>
       <div class="search">
         <input type="search" placeholder="請輸入關鍵字" />
@@ -38,58 +38,168 @@
     <header class="header">
       <div class="banner center">
         <div class="left">
-          <a href="#" class="item">前端開發</a>
-          <a href="#" class="item">後端開發</a>
-          <a href="#" class="item">移動開發</a>
-          <a href="#" class="item">人工智能</a>
-          <a href="#" class="item">商業預測</a>
-          <a href="#" class="item">雲計算＆大數據</a>
-          <a href="#" class="item">雲維＆從測試</a>
-          <a href="#" class="item">UI 設計</a>
-          <a href="#" class="item">產品</a>
+          <a class="item" href="#">前端開發</a>
+          <a class="item" href="#">後端開發</a>
+          <a class="item" href="#">移動開發</a>
+          <a class="item" href="#">人工智能</a>
+          <a class="item" href="#">商業預測</a>
+          <a class="item" href="#">雲計算＆大數據</a>
+          <a class="item" href="#">雲維＆從測試</a>
+          <a class="item" href="#">UI 設計</a>
+          <a class="item" href="#">產品</a>
         </div>
         <div class="right">
           <h3 class="my-class">我的課程表</h3>
-          <a href="#" class="learn-class">
+          <a class="learn-class" href="#">
             <h4>繼續學習 前端開發</h4>
             <p>正在學習 - CSS3</p>
           </a>
-          <a href="#" class="learn-class">
+          <a class="learn-class" href="#">
             <h4>繼續學習 後端開發</h4>
             <p>正在學習 - Node.js</p>
           </a>
-          <a href="#" class="learn-class">
+          <a class="learn-class" href="#">
             <h4>繼續學習 移動開發</h4>
             <p>正在學習 - 響應式設計</p>
           </a>
-          <a href="#" class="all-class" href="#">全部課程</a>
+          <a class="all-class" href="#">全部課程</a>
         </div>
       </div>
     </header>
 
     <!-- 產品 - 精品推薦 -->
     <div class="recommend-menu center">
-      <a href="#" class="item selected">精品推薦</a>
-      <a href="#" class="item">React 18</a>
-      <a href="#" class="item">Vue 3</a>
-      <a href="#" class="item">jQuery</a>
-      <a href="#" class="item">MySQL</a>
-      <a href="#" class="item">JavaWeb</a>
-      <a href="#" class="item">Spark</a>
-      <a href="#" class="setting">修改興趣</a>
+      <a class="item selected" href="#">精品推薦</a>
+      <a class="item" href="#">React 18</a>
+      <a class="item" href="#">Vue 3</a>
+      <a class="item" href="#">jQuery</a>
+      <a class="item" href="#">MySQL</a>
+      <a class="item" href="#">JavaWeb</a>
+      <a class="item" href="#">Spark</a>
+      <a class="setting" href="#">修改興趣</a>
     </div>
 
-    <!-- <div class="recommend">
-      <h3 class="title">精品推薦</h3>
-      <div class="view-all">查看全部</div>
-      <div class="products">
+    <div class="recommend center">
+      <div class="title-header clearfix">
+        <h3 class="title">精品推薦</h3>
+        <a class="view-all" href="#">查看全部</a>
+      </div>
+      <div class="products clearfix">
         <div class="item">
-          <a href="#"><img src="" alt="課程封面" /></a>
-          <a href="#" class="name">Think PHP 5.0 博客系統實戰項目演練</a>
-          <span class="level">高級</span>
-          <span class="studying"> • 1125 人正在學習</span>
+          <a class="img" href="#"><img src="./images/products/01.png" alt="課程封面" /></a>
+          <a class="name" href="#">Think PHP 5.0 博客系統實戰項目演練</a>
+          <div class="info">
+            <span class="level">高級</span>
+            <span class="studying"> • 1125 人正在學習</span>
+          </div>
+        </div>
+        <div class="item">
+          <a class="img" href="#"><img src="./images/products/02.png" alt="課程封面" /></a>
+          <a class="name" href="#">Android 網路圖片加載框架詳解</a>
+          <div class="info">
+            <span class="level">高級</span>
+            <span class="studying"> • 1125 人正在學習</span>
+          </div>
+        </div>
+        <div class="item">
+          <a class="img" href="#"><img src="./images/products/03.png" alt="課程封面" /></a>
+          <a class="name" href="#">Angular 2 最新框架 + 主流技術 + 項目實戰</a>
+          <div class="info">
+            <span class="level">高級</span>
+            <span class="studying"> • 1125 人正在學習</span>
+          </div>
+        </div>
+        <div class="item">
+          <a class="img" href="#"><img src="./images/products/04.png" alt="課程封面" /></a>
+          <a class="name" href="#">Android Hybrid APP開發實戰 H5 + 原生!</a>
+          <div class="info">
+            <span class="level">高級</span>
+            <span class="studying"> • 1125 人正在學習</span>
+          </div>
+        </div>
+        <div class="item">
+          <a class="img" href="#"><img src="./images/products/05.png" alt="課程封面" /></a>
+          <a class="name" href="#">UGUI 源碼深度剖析</a>
+          <div class="info">
+            <span class="level">高級</span>
+            <span class="studying"> • 1125 人正在學習</span>
+          </div>
+        </div>
+        <div class="item">
+          <a class="img" href="#"><img src="./images/products/06.png" alt="課程封面" /></a>
+          <a class="name" href="#">Kami2 首頁界面切換效果</a>
+          <div class="info">
+            <span class="level">高級</span>
+            <span class="studying"> • 1125 人正在學習</span>
+          </div>
+        </div>
+        <div class="item">
+          <a class="img" href="#"><img src="./images/products/07.png" alt="課程封面" /></a>
+          <a class="name" href="#">Unity Profiler 入門</a>
+          <div class="info">
+            <span class="level">高級</span>
+            <span class="studying"> • 1125 人正在學習</span>
+          </div>
+        </div>
+        <div class="item">
+          <a class="img" href="#"><img src="./images/products/08.png" alt="課程封面" /></a>
+          <a class="name" href="#">Cocos2d-x 引擎源碼中的紋理優化</a>
+          <div class="info">
+            <span class="level">高級</span>
+            <span class="studying"> • 1125 人正在學習</span>
+          </div>
+        </div>
+        <div class="item">
+          <a class="img" href="#"><img src="./images/products/01.png" alt="課程封面" /></a>
+          <a class="name" href="#">Think PHP 5.0 博客系統實戰項目演練</a>
+          <div class="info">
+            <span class="level">高級</span>
+            <span class="studying"> • 1125 人正在學習</span>
+          </div>
+        </div>
+        <div class="item">
+          <a class="img" href="#"><img src="./images/products/02.png" alt="課程封面" /></a>
+          <a class="name" href="#">Android 網路圖片加載框架詳解</a>
+          <div class="info">
+            <span class="level">高級</span>
+            <span class="studying"> • 1125 人正在學習</span>
+          </div>
         </div>
       </div>
-    </div> -->
+    </div>
+
+    <!-- 底部導航 -->
+    <footer class="footer">
+      <div class="content center">
+        <div class="left">
+          <img class="logo" src="./images/logo.png" alt="學成在線 LOGO" title="學成在線" />
+          <p class="desciption">學成在線致力於普及臺灣最好的教育，它與臺灣一流大學和機構合作提供線上課程。 <br />© 2021 年 NekoChanTaiwan 保留所有權利。</p>
+          <a class="download-app" href="#">下載 APP</a>
+        </div>
+        <div class="right">
+          <dl>
+            <dt class="title">關於學成在線</dt>
+            <dd><a class="item" href="#">關於</a></dd>
+            <dd><a class="item" href="#">管理團隊</a></dd>
+            <dd><a class="item" href="#">工作機會</a></dd>
+            <dd><a class="item" href="#">客戶服務</a></dd>
+            <dd><a class="item" href="#">幫助</a></dd>
+          </dl>
+          <dl>
+            <dt class="title">新手指南</dt>
+            <dd><a class="item" href="#">如何註冊</a></dd>
+            <dd><a class="item" href="#">如何選課</a></dd>
+            <dd><a class="item" href="#">如何拿到畢業證書</a></dd>
+            <dd><a class="item" href="#">學分是什麼</a></dd>
+            <dd><a class="item" href="#">考試未通過怎麼辦</a></dd>
+          </dl>
+          <dl>
+            <dt class="title">合作夥伴</dt>
+            <dd><a class="item" href="#">合作機構</a></dd>
+            <dd><a class="item" href="#">合作導師</a></dd>
+          </dl>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

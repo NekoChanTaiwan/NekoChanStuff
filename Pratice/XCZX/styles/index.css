@@ -12,6 +12,7 @@ a {
 
 body {
   background-color: #f3f5f7;
+  /* height: 2000px; */
 }
 
 .clearfix {
@@ -229,5 +230,134 @@ body {
 .recommend-menu .setting {
   float: right;
   margin-right: 26px;
+  color: #00a4ff;
+}
+
+.recommend {
+  margin-top: 30px;
+}
+
+.recommend .title {
+  float: left;
+  color: #494949;
+  font-size: 20px;
+}
+
+.recommend .view-all {
+  float: right;
+  color: #a5a5a5;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.recommend .view-all:hover {
+  color: #00a4ff;
+}
+
+.recommend .products {
+  min-height: 500px;
+  padding-top: 20px;
+}
+
+.recommend .products .item {
+  float: left;
+  width: 228px;
+  height: 270px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(118, 118, 118, 0.5);
+  transition: box-shadow 0.2s;
+}
+
+.recommend .products .item:hover {
+  box-shadow: 7px 7px 5px 0px rgba(118, 118, 118, 0.5);
+}
+
+.recommend .products .item:nth-child(5n) {
+  margin-right: 0;
+}
+
+.recommend .products .item .name {
+  display: block;
+  width: 184px;
+  min-height: 40px;
+  margin: 12px auto 20px;
+  font-size: 14px;
+  color: #050505;
+}
+
+.recommend .products .item .info {
+  width: 184px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #606060;
+}
+
+.recommend .products .item .info .level {
+  color: #ff7c2d;
+}
+
+/* 底部導航 */
+.footer {
+  margin-top: 25px;
+  background-color: #fff;
+}
+
+.footer .content {
+  height: 360px;
+  padding-top: 34px;
+}
+
+.footer .content .left {
+  float: left;
+}
+
+.footer .content .left .desciption {
+  margin: 20px 0 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer .content .left .download-app {
+  display: block;
+  width: 120px;
+  height: 36px;
+  border: solid 1px #00a4ff;
+  font-size: 14px;
+  line-height: 34px;
+  text-align: center;
+  color: #00a4ff;
+}
+
+.footer .content .left .download-app:hover {
+  color: #fff;
+  background-color: #00a4ff;
+}
+
+.footer .content .right {
+  float: right;
+}
+
+.footer .content .right dl {
+  float: left;
+  margin-left: 120px;
+}
+
+.footer .content .right dl:first-child {
+  margin-left: 0;
+}
+
+.footer .content .right .title {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer .content .right .item {
+  font-size: 14px;
+  color: #333;
+}
+
+.footer .content .right .item:hover {
   color: #00a4ff;
 }
