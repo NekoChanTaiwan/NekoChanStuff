@@ -262,6 +262,7 @@ body {
 
 .recommend .products .item {
   float: left;
+  position: relative;
   width: 228px;
   height: 270px;
   margin-bottom: 15px;
@@ -277,6 +278,11 @@ body {
 
 .recommend .products .item:nth-child(5n) {
   margin-right: 0;
+}
+
+.recommend .products .item .hot {
+  position: absolute;
+  right: -4px;
 }
 
 .recommend .products .item .name {
