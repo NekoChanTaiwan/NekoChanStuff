@@ -5,10 +5,12 @@
 
 .banner .content {
   position: relative;
+  overflow: hidden;
 }
 
 .banner .img {
   display: block;
+  transition: all 0.3s;
 }
 
 .banner .img::before,
@@ -21,6 +23,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   background-image: url(../images/sprites.png);
+  transition: all 0.3s;
 }
 
 .banner .img::before {
@@ -34,6 +37,18 @@
   right: 0;
   background-position: -22px -60px;
   transform: translate(-12px, -50%);
+}
+
+.banner .img:hover {
+  transform: scale(1.1);
+}
+
+.banner .img:hover::before {
+  transform: translate(286px, -50%);
+}
+
+.banner .img:hover::after {
+  transform: translate(-62px, -50%);
 }
 
 .banner .content .menu {
@@ -139,5 +154,111 @@
 }
 
 .new-products .list .item .price {
+  color: #9a2e1f;
+}
+
+/* 生鮮 */
+.foods .head .title {
+  float: left;
+  font-size: 29px;
+}
+
+.foods .head .menu {
+  float: right;
+  margin-right: 65px;
+}
+
+.foods .head .menu .item {
+  float: left;
+  width: 46px;
+  height: 20px;
+  margin-right: 7px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.foods .head .menu .item:last-child {
+  margin-right: 0;
+}
+
+.foods .head .menu .item:hover,
+.foods .head .menu .item:hover a {
+  color: #fefbfc;
+  background-color: #27ba9b;
+}
+
+.foods .head .menu .item.selected,
+.foods .head .menu .item.selected a {
+  color: #fefbfc;
+  background-color: #27ba9b;
+}
+
+.foods .head .view-all {
+  float: right;
+  color: #999;
+}
+
+.foods .head .view-all::after {
+  content: '〉';
+  display: inline-block;
+  margin-left: 10px;
+  transform: translateY(-2px);
+  font-size: 12px;
+}
+
+.foods .products {
+  padding: 34px 0;
+}
+
+.foods .products .left {
+  float: left;
+  position: relative;
+  z-index: 1;
+  margin-right: 26px;
+  overflow: hidden;
+}
+
+.foods .products .left img {
+  transition: all 0.5s;
+}
+
+.foods .products .left:hover img {
+  transform: scale(1.1);
+}
+
+.foods .products .right {
+  float: left;
+  /* 搞不懂這裡為什麼一定要寫死 */
+  width: 968px;
+}
+
+.foods .products .right .item {
+  float: left;
+  width: 242px;
+  height: 305px;
+}
+
+.foods .products .right .item img {
+  height: 184px;
+  transition: all 0.5s;
+}
+
+.foods .products .right .item:hover img {
+  transform: scale(1.2);
+}
+
+.foods .products .right .item .info {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.foods .products .right .item h3 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.foods .products .right .item .price {
+  margin-top: 15px;
   color: #9a2e1f;
 }
