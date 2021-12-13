@@ -11,31 +11,27 @@
   display: block;
 }
 
-.banner .img::before {
+.banner .img::before,
+.banner .img::after {
   content: '';
   position: absolute;
-  top: 50%;
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   background-image: url(../images/sprites.png);
+}
+
+.banner .img::before {
+  top: 50%;
   background-position: 14px -60px;
   transform: translate(256px, -50%);
 }
 
 .banner .img::after {
-  content: '';
-  position: absolute;
   top: 50%;
   right: 0;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.2);
-  background-repeat: no-repeat;
-  background-image: url(../images/sprites.png);
   background-position: -22px -60px;
   transform: translate(-12px, -50%);
 }
@@ -46,11 +42,11 @@
   top: 0;
   width: 251px;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .banner .content .menu .item {
   padding-left: 36px;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .banner .content .menu .item:hover {
@@ -75,4 +71,73 @@
   content: '〉';
   float: right;
   padding-right: 19px;
+}
+
+/* 新鮮好物 */
+.new-products {
+  padding: 48px 0;
+}
+
+.new-products .head .title {
+  float: left;
+  color: #333;
+  font-size: 29px;
+}
+
+.new-products .head .description {
+  float: left;
+  margin: 12px 0 0 34px;
+  color: #999;
+}
+
+.new-products .head .view-all {
+  float: right;
+  margin: 12px 0 0 34px;
+  color: #999;
+}
+
+.new-products .head .view-all::after {
+  content: '〉';
+  display: inline-block;
+  margin-left: 10px;
+  transform: translateY(-2px);
+  font-size: 12px;
+}
+
+.new-products .list {
+  margin-top: 30px;
+}
+
+.new-products .list .item {
+  float: left;
+  height: 405px;
+  margin-right: 8px;
+  background-color: #f0f9f4;
+  text-align: center;
+  overflow: hidden;
+}
+
+.new-products .list .item:last-child {
+  margin-right: 0;
+}
+
+.new-products .list .item img {
+  height: 304px;
+  transition: all 0.5s;
+}
+
+.new-products .list .item:hover img {
+  transform: scale(1.2);
+}
+
+.new-products .list .item .info {
+  position: relative;
+  height: 100px;
+  padding: 22px 0 4px 0;
+  background-color: #f0f9f4;
+  z-index: 2;
+}
+
+.new-products .list .item .price {
+  color: #9a2e1f;
 }

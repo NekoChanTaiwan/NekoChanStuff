@@ -92,11 +92,13 @@
 .header .content .search::before {
   content: '';
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
   background: no-repeat url(../images/sprites.png) -80px -70px;
-  transform: translate(22px, 3px);
-  transition: opacity 0.1s;
+  vertical-align: middle;
+  cursor: pointer;
+  transform: translateX(22px);
+  transition: all 0.2s;
 }
 
 .header .content .search input {
@@ -104,7 +106,7 @@
   height: 35px;
   padding-left: 28px;
   border-bottom: 1px solid #f4f4f4;
-  transition: padding-left 0.2s;
+  transition: all 0.2s;
 }
 
 .header .content .search input::placeholder {
@@ -113,11 +115,16 @@
 }
 
 .header .content .search input:focus {
+  width: 200px;
+  height: 45px;
   padding-left: 0;
+  font-size: 18px;
+  box-shadow: 12px 8px 8px -3px rgb(237, 237, 237);
 }
 
 /* :focus-within 當自身或某個子元素獲得焦點時 */
 .header .content .search:focus-within::before {
+  transform: translateX(0px);
   opacity: 0;
 }
 
@@ -127,4 +134,72 @@
   height: 22px;
   margin: 48px 0 0 10px;
   background: no-repeat url(../images/sprites.png) -120px -70px;
+}
+
+/* footer */
+.footer {
+  height: 342px;
+  background-color: #333;
+}
+
+.footer .content .title {
+  float: left;
+  box-sizing: border-box;
+  width: 413px;
+  height: 174px;
+  padding: 60px 0 55px;
+  line-height: 60px;
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+}
+
+.footer .content .title::before {
+  content: '';
+  display: inline-block;
+  width: 58px;
+  height: 60px;
+  margin-right: 18px;
+  vertical-align: middle;
+}
+
+.footer .content .title:nth-child(1)::before {
+  background: no-repeat url(../images/sprites.png);
+}
+
+.footer .content .title:nth-child(2)::before {
+  background: no-repeat url(../images/sprites.png) -130px 0;
+}
+
+.footer .content .title:nth-child(3)::before {
+  background: no-repeat url(../images/sprites.png) -65px 0;
+}
+
+.footer .content hr {
+  border: 1px solid #434343;
+  margin: 0;
+}
+
+.footer .content .menu {
+  width: 737px;
+  margin: 42px auto 18px;
+}
+
+.footer .content .menu .item {
+  float: left;
+}
+
+.footer .content .menu .item a {
+  border-right: 1px solid #999;
+  padding: 0 19px;
+  color: #999;
+}
+
+.footer .content .menu .item:hover a {
+  color: #fff;
+}
+
+.footer .content .copyright {
+  color: #999;
+  text-align: center;
 }
