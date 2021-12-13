@@ -116,7 +116,7 @@
   padding-left: 0;
 }
 
-/* :focus-within 當某個子元素獲得焦點時 */
+/* :focus-within 當自身或某個子元素獲得焦點時 */
 .header .content .search:focus-within::before {
   opacity: 0;
 }
