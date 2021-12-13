@@ -1,0 +1,130 @@
+/* 版心 */
+.center {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+/* 快捷導航 */
+.shortcut {
+  width: 100%;
+  background-color: #333;
+}
+
+.shortcut .menu {
+  float: right;
+  box-sizing: border-box;
+  height: 52px;
+  padding: 16px 0;
+  background-color: #333;
+}
+
+.shortcut .menu .item {
+  float: left;
+  padding: 0 16px;
+  border-right: 1px solid #666;
+  font-size: 14px;
+}
+
+.shortcut .menu .item:last-child {
+  border-right: 0;
+}
+
+.shortcut .menu .item:last-child a::before {
+  content: '';
+  display: inline-block;
+  width: 11px;
+  height: 16px;
+  padding-right: 8px;
+  background: no-repeat url(../images/sprites.png) -160px -70px;
+  transform: translateY(2px);
+}
+
+.shortcut .menu .item a {
+  color: #dcdcdc;
+}
+
+.shortcut .menu .item a:hover {
+  color: #fff;
+}
+
+/* 頭部導航 */
+.header {
+  box-sizing: border-box;
+  height: 130px;
+  background-color: #fff;
+}
+
+.header .content .logo {
+  float: left;
+  height: 70px;
+  margin: 26px 40px 0 0;
+}
+
+.header .content .menu {
+  float: left;
+  margin: 48px 0;
+}
+
+.header .content .menu .item {
+  float: left;
+  margin-right: 52px;
+}
+
+.header .content .menu .item:last-child {
+  margin-right: 0;
+}
+
+.header .content .menu .item a {
+  display: inline-block;
+  padding-bottom: 7px;
+}
+
+.header .content .menu .item:hover a {
+  color: #27ba9b;
+  border-bottom: 1px solid #27ba9b;
+}
+
+.header .content .search {
+  float: right;
+  margin: 42px 0;
+}
+
+.header .content .search::before {
+  content: '';
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: no-repeat url(../images/sprites.png) -80px -70px;
+  transform: translate(22px, 3px);
+  transition: opacity 0.1s;
+}
+
+.header .content .search input {
+  width: 172px;
+  height: 35px;
+  padding-left: 28px;
+  border-bottom: 1px solid #f4f4f4;
+  transition: padding-left 0.2s;
+}
+
+.header .content .search input::placeholder {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.header .content .search input:focus {
+  padding-left: 0;
+}
+
+/* :focus-within 當某個子元素獲得焦點時 */
+.header .content .search:focus-within::before {
+  opacity: 0;
+}
+
+.header .content .shopping-cart {
+  float: right;
+  width: 22px;
+  height: 22px;
+  margin: 48px 0 0 10px;
+  background: no-repeat url(../images/sprites.png) -120px -70px;
+}
