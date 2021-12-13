@@ -2,3 +2,4 @@
 
 - [表格移動](https://nekochantaiwan.github.io/NekoChanStuff/Pratice/TableMove.html)
 - [學成在線](https://nekochantaiwan.github.io/NekoChanStuff/Pratice/xczx/)
+- [小鮮兔](https://nekochantaiwan.github.io/NekoChanStuff/Pratice/xtx-pc-client/)
