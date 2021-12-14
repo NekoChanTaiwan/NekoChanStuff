@@ -60,7 +60,6 @@
 }
 
 .banner .content .menu .item {
-  padding-left: 36px;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -71,6 +70,7 @@
 .banner .content .menu .item a {
   display: block;
   height: 50px;
+  padding-left: 36px;
   line-height: 50px;
   font-size: 14px;
   color: #fff;
