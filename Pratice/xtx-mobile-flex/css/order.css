@@ -1,0 +1,191 @@
+body {
+  background-color: #f7f7f8;
+}
+/* 公共樣式 */
+.red {
+  color: #cf4444;
+}
+
+.pannel {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  background-color: #fff;
+}
+
+/* 主體內容 */
+.main {
+  /* display: flex; */
+  padding: 12px 11px 80px;
+}
+
+/* 使用者資訊 */
+.main .user-info {
+  display: flex;
+  align-items: center;
+  height: 85px;
+  padding: 15px 0 15px 11px;
+}
+
+.main .user-info .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 11px;
+  background-image: linear-gradient(90deg, #6fc2aa 5%, #54b196 100%);
+  text-align: center;
+  line-height: 28px;
+}
+
+.main .user-info .icon .iconfont {
+  color: #fff;
+}
+
+.main .user-info .user {
+  flex: 1;
+}
+
+.main .user-info .user .name {
+  font-size: 15px;
+}
+
+.main .user-info .user .location {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.main .user-info .detail {
+  display: block;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+}
+/* 商品資訊 */
+.main .items {
+  display: flex;
+}
+
+.main .items .img {
+  width: 85px;
+  margin-right: 10px;
+}
+
+.main .items .info {
+  flex: 1;
+}
+
+.main .items .info .title {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.main .items .info .detail {
+  display: inline-block;
+  background-color: #f7f7f8;
+  font-size: 11px;
+  color: #888;
+}
+
+.main .items .info .price span:first-child {
+  color: #cf4444;
+}
+
+.main .items .info .price span:last-child {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.main .items .count {
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+}
+
+/* 其他 */
+.main .other {
+  padding: 15px;
+}
+
+.main .other h5 {
+  font-size: 13px;
+  color: #262626;
+  font-weight: normal;
+}
+
+.main .other div:nth-child(2) {
+  display: flex;
+  margin: 18px 0;
+}
+
+.main .other div:nth-child(2) span:last-child {
+  margin-left: 18px;
+  font-size: 12px;
+  color: #989898;
+}
+
+.main .other div:nth-child(odd) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .other .pay-method a {
+  font-size: 13px;
+}
+
+/* 最終金額 */
+.totals div {
+  display: flex;
+  justify-content: space-between;
+  color: #262626;
+  font-size: 13px;
+}
+
+.totals h5 {
+  font-weight: normal;
+}
+
+.totals .freight {
+  margin: 16px 0;
+}
+
+.totals .discount p {
+  color: #cf4444;
+}
+
+/* 底部支付 */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 10px;
+  border-top: 1px solid #ededed;
+  background-color: #fff;
+}
+
+.footer .left {
+  /* 瀏覽器最小字號是 12px */
+  font-size: 12px;
+}
+
+.footer .left .price {
+  font-size: 20px;
+}
+
+.footer .checkout {
+  display: block;
+  width: 90px;
+  height: 35px;
+  border-radius: 3px;
+  background-image: linear-gradient(90deg, #6fc2aa 5%, #54b196 100%);
+  font-size: 13px;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+}

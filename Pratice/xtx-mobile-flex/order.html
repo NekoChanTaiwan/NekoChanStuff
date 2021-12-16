@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>確認訂單</title>
+    <link rel="stylesheet" href="./lib/iconfont/iconfont.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css//order.css" />
+  </head>
+  <body>
+    <!-- 主體內容 -->
+    <main class="main">
+      <!-- 使用者資訊 -->
+      <div class="pannel user-info">
+        <div class="icon">
+          <span class="iconfont">&#xe686;</span>
+        </div>
+        <div class="user">
+          <h3 class="name">NekoChan</h3>
+          <h4 class="location">臺灣 新北市 新莊區 XXX 號</h4>
+        </div>
+        <a class="detail" href="#"><i class="iconfont">&#xe600;</i></a>
+      </div>
+      <!-- 商品資訊 -->
+      <div class="pannel items">
+        <img class="img" src="./uploads/pic.png" alt="" />
+        <div class="info">
+          <h3 class="title">康爾貝 非接觸式紅外體溫儀 領券立減30元 嬰兒級材質 測溫…</h3>
+          <div class="detail">
+            <span class="tag">粉色</span>
+            <span class="tag">紅外體溫計</span>
+          </div>
+          <div class="price">
+            <span>$<i>266</i></span>
+            <span>$<i>299</i></span>
+          </div>
+        </div>
+        <div class="count"><i class="iconfont">&#xe7ce;</i><i>3</i></div>
+      </div>
+      <!-- 其他 -->
+      <div class="pannel other">
+        <div class="delivery-method">
+          <h5>配送方式</h5>
+          <h5>超級快遞</h5>
+        </div>
+        <div class="info">
+          <h5>買家備住</h5>
+          <span>操你媽，給老子送快點。</span>
+        </div>
+        <div class="pay-method">
+          <h5>支付方式</h5>
+          <a href="#">PayPal<i class="iconfont">&#xe600;</i></a>
+        </div>
+      </div>
+      <!-- 最終金額 -->
+      <div class="pannel totals">
+        <div class="price">
+          <h5>商品總價</h5>
+          <p>$299.00</p>
+        </div>
+        <div class="freight">
+          <h5>運費</h5>
+          <p>$300.00</p>
+        </div>
+        <div class="discount">
+          <h5>折扣</h5>
+          <p>-$30.00</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- 底部支付 -->
+    <footer class="footer">
+      <div class="left">
+        合計：
+        <strong class="price red">$<i>569.00</i></strong>
+      </div>
+      <a class="checkout" href="#">去支付</a>
+    </footer>
+  </body>
+</html>
