@@ -50,7 +50,7 @@
       const boxElement = document.querySelector('.box')
 
       const observer = new ResizeObserver(() => {
-        const { offsetWidth, offsetHeight, style } = boxElement
+        const { style, offsetWidth, offsetHeight } = boxElement
         style.fontSize = (offsetWidth + offsetHeight) / 20 + 'px'
       })
 
