@@ -36,14 +36,16 @@ export default () => {
     }
   }
 
-  const featuresBtnHander = features => _ => {
-    let total = 0
+  const equal = _ => {
+    const total = calc(curNum, curOperator, secNum)
+    setTotal(total)
+    setCurNum(total)
+  }
 
+  const featuresBtnHander = features => _ => {
     switch (features) {
       case '=':
-        total = calc(curNum, curOperator, secNum)
-        setTotal(total)
-        setCurNum(total)
+        equal()
         break
 
       case 'C':
@@ -52,7 +54,7 @@ export default () => {
         break
 
       case '%':
-        return setOperator(REMAINDER)
+        return operatorBtnHandler(REMAINDER)()
 
       case 'DEL':
         if (secNum) {
@@ -77,6 +79,13 @@ export default () => {
       if (num !== '+ / -') return setSecNum(secNum + num)
       return setSecNum(-secNum)
     }
+  }
+
+  const operatorBtnHandler = operator => _ => {
+    if (!curOperator) return setOperator(operator)
+    equal()
+    setSecNum('')
+    setOperator(operator)
   }
 
   /**
@@ -112,7 +121,7 @@ export default () => {
           </Left>
           <Right>
             {key.operator.map(operator => (
-              <Btn key={operator} onClick={_ => setOperator(operator)}>
+              <Btn key={operator} onClick={operatorBtnHandler(operator)}>
                 {operator}
               </Btn>
             ))}
