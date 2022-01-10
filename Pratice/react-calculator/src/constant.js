@@ -1,0 +1,5 @@
+export const INCREMENT = '+'
+export const DECREMENT = '-'
+export const MULTIPLICATION = 'x'
+export const DIVISION = '÷'
+export const REMAINDER = '%'
