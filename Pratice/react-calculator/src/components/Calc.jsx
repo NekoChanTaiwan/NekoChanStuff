@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Container, Input, Keyboard, Header, Bottom, Left, Right, NumBtn, Btn } from './Calc.styled'
 import { INCREMENT, DECREMENT, MULTIPLICATION, DIVISION, REMAINDER } from '../constant'
 
@@ -13,6 +13,20 @@ export default () => {
   const [secNum, setSecNum] = useState('')
   const [curOperator, setOperator] = useState('')
   const [total, setTotal] = useState(0)
+  const [displayValue, setDisplayValue] = useState('')
+
+  useEffect(() => {
+    setDisplayValue(
+      (curNum
+        ? secNum
+          ? Number(secNum)
+          : total
+          ? Number(total)
+          : Number(curNum)
+        : 0
+      ).toLocaleString(undefined, { style: 'decimal', maximumFractionDigits: 20 })
+    )
+  }, [curNum, secNum, curOperator, total])
 
   const calc = (curNum = 0, operator, secNum) => {
     const n1 = Number(curNum)
@@ -93,16 +107,7 @@ export default () => {
    */
   return (
     <Container>
-      <Input
-        value={(curNum
-          ? secNum
-            ? Number(secNum)
-            : total
-            ? Number(total)
-            : Number(curNum)
-          : 0
-        ).toLocaleString(undefined, { style: 'decimal', maximumFractionDigits: 20 })}
-      />
+      <Input value={displayValue} />
       <Keyboard>
         <Header>
           {key.features.map(feature => (
