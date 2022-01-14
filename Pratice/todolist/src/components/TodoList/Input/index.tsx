@@ -1,6 +1,6 @@
 import { FC, ReactElement, KeyboardEvent, useContext, useRef } from 'react'
 import { nanoid } from 'nanoid'
-import { todoCtx } from '../index'
+import { todoCtx } from '../'
 import { ITodoCtx } from '../typings'
 
 const Input: FC = (): ReactElement => {

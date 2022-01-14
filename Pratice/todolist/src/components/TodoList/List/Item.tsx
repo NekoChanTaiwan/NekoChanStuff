@@ -1,5 +1,5 @@
 import { FC, ReactElement, useContext } from 'react'
-import { todoCtx } from '../index'
+import { todoCtx } from '../'
 import { ITodo, ITodoCtx } from '../typings'
 
 interface IProps {
